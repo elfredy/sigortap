@@ -1,0 +1,60 @@
+.headerTop {
+    background-color: $color-primary;
+    padding: 1rem 0;
+
+    &__left {
+        a {
+            color: $color-white;
+            transition: all 0.3s;
+            font-size: 1.4rem;
+            &:hover {
+                color: $color-gray-light;
+                text-decoration: none;
+            }
+
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &__right {
+        a {
+            font-size: 1.4rem;
+            color: $color-white;
+            transition: all 0.3s;
+
+            &:hover {
+                color: $color-gray-light;
+                text-decoration: none;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.header {
+    background-color: $color-gray-light;
+    padding-bottom: 1rem;
+    &__navbar {
+        background-color: $color-white;
+        margin-top: 1rem;
+    }
+
+    &__logoBox{
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            left: 100%;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $color-yellow;
+            clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);
+        }
+    }
+}

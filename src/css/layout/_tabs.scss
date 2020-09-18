@@ -1,0 +1,79 @@
+.tabFirst {
+    border-bottom: none !important;
+
+    .nav-item {
+        &:not(:first-child) {
+            margin-left: 2.5rem;
+        }
+    }
+
+    .nav-link {
+        color: $color-white ;
+        font-size: 2.4rem;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        border: 1px solid $color-gray-light;
+        min-width: 15rem;
+    
+
+        & img{
+            width: 5.5rem;
+            height: 5.5rem;
+            object-fit: contain;
+        }
+
+        & span{
+            margin-top: 1.5rem;
+        }
+
+        &:hover {
+            background-color: $color-yellow;
+            color: $color-primary;
+        }
+    }
+
+    .active {
+        background-color: $color-yellow !important;
+        color: $color-primary !important;
+        border: 1px solid $color-gray-light !important;
+    }
+}
+
+
+.tabSecond{
+    margin-top: 3rem;
+
+    border-bottom: none !important;
+
+    .nav-link {
+        background-color: $color-white !important;
+        font-size: 2.4rem;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+        border: none !important;
+        border-radius: .3rem;
+        min-width: 8rem;
+        color: $color-primary;
+        
+    
+        &:hover {
+            background-color: $color-yellow !important;
+            color: $color-primary !important;
+        }
+    }
+
+    .active {
+        background-color: $color-yellow !important;
+        color: $color-primary !important;
+        border: 1px solid $color-gray-light !important;
+    }
+
+}

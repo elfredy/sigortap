@@ -1,0 +1,138 @@
+.offerCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-gray-light;
+    padding: 3.5rem 1rem;
+    border-radius: 0.6rem;
+    width: 100%;
+    margin-top: 1.5rem;
+
+    & h4 {
+        font-size: 1.8rem;
+        color: $color-blue;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+
+        & span {
+            color: $color-primary;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        max-width: 12rem;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__sub {
+        position: relative;
+        top: -1.8rem;
+        transition: all 0.4s;
+
+        span {
+            font-size: 1.8rem;
+            color: $color-blue;
+            font-weight: 500;
+        }
+
+        .sublist {
+            position: absolute;
+            top: 75%;
+            opacity: 0;
+            visibility: hidden;
+            padding: 0;
+            background-color: $color-white;
+            list-style: none;
+            min-width: 18rem;
+            left: -8.5rem;
+            border-radius: 0.6rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s;
+
+            li {
+                padding: 1rem 0 1rem 1rem;
+                border-bottom: 1px solid $color-gray-light;
+                font-size: 1.4rem;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 100%;
+                right: 5%;
+                margin-left: -5px;
+                border-width: 8px;
+                border-style: solid;
+                border-color: transparent transparent #fff;
+            }
+        }
+
+        &:after {
+            content: " \02EF";
+            position: absolute;
+            color: $color-blue;
+            right: -2rem;
+            top: -4px;
+            transform: translateY(-50%);
+            font-size: 4rem;
+        }
+
+        &:hover {
+            .sublist {
+                top: 115%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    &__check {
+        display: flex;
+        top: -1.8rem;
+    }
+
+    &__checkImg {
+        width: 1.8rem;
+        height: 1.8rem;
+        object-fit: cover;
+        margin-top: 1rem;
+        transform: scale(.4);
+        
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    .checkImg{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    &__label {
+        font-size: 14px;
+        padding: 1rem;
+        background-color: $color-blue;
+        color: $color-white;
+        transition: all 0.3s;
+        border-radius: 0.6rem;
+        margin-right: 2.5rem;
+        min-width: 7rem;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            background-color: $color-yellow;
+        }
+    }
+
+     &__checkBox {
+       opacity: 0;
+    }
+}

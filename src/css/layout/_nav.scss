@@ -1,0 +1,18 @@
+.nav{
+    &__item{
+        &:not(:last-child){
+            margin-right: 1.6rem;
+        }
+
+    }
+
+    &__link{
+        font-size: 1.8rem;
+        color: $color-secondary;
+        transition: all .3s;
+        &:hover{
+            color: $color-yellow;
+            text-decoration: none;
+        }
+    }
+}
