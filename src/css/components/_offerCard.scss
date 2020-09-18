@@ -15,6 +15,10 @@
         display: flex;
         flex-direction: column;
 
+        @include respondmax(lg) {
+            font-size: 1.4rem;
+        }
+
         & span {
             color: $color-primary;
             font-weight: 400;
@@ -25,6 +29,10 @@
     &__link {
         display: block;
         max-width: 12rem;
+
+        @include respondmax(lg) {
+            max-width: 8rem;
+        }
 
         & img {
             width: 100%;
@@ -37,11 +45,19 @@
         position: relative;
         top: -1.8rem;
         transition: all 0.4s;
-
+        cursor: pointer;
         span {
             font-size: 1.8rem;
             color: $color-blue;
             font-weight: 500;
+
+            @include respondmax(lg) {
+                font-size: 1.4rem;
+            }
+        }
+        i {
+            color: $color-blue;
+            margin-left: 0.5rem;
         }
 
         .sublist {
@@ -76,7 +92,7 @@
             }
         }
 
-        &:after {
+        /*  &:after {
             content: " \02EF";
             position: absolute;
             color: $color-blue;
@@ -84,7 +100,7 @@
             top: -4px;
             transform: translateY(-50%);
             font-size: 4rem;
-        }
+        } */
 
         &:hover {
             .sublist {
@@ -105,13 +121,13 @@
         height: 1.8rem;
         object-fit: cover;
         margin-top: 1rem;
-        transform: scale(.4);
-        
+        transform: scale(0.4);
+
         opacity: 0;
-        transition: all .3s;
+        transition: all 0.3s;
     }
 
-    .checkImg{
+    .checkImg {
         transform: scale(1);
         opacity: 1;
     }
@@ -130,9 +146,17 @@
         &:hover {
             background-color: $color-yellow;
         }
+
+        @include respondmax(lg) {
+            font-size: 12px;
+        }
     }
 
-     &__checkBox {
-       opacity: 0;
+    .labelClick {
+        background-color: $color-yellow;
+    }
+
+    &__checkBox {
+        opacity: 0;
     }
 }

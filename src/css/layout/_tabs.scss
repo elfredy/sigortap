@@ -46,9 +46,9 @@
 
 .tabSecond{
     margin-top: 3rem;
-
+    position: relative;
     border-bottom: none !important;
-
+    z-index: 22;
     .nav-link {
         background-color: $color-white !important;
         font-size: 2.4rem;
@@ -59,7 +59,7 @@
         justify-content: center;
         transition: all 0.3s;
         border: none !important;
-        border-radius: .3rem;
+        border-radius: .6rem;
         min-width: 8rem;
         color: $color-primary;
         
@@ -73,7 +73,20 @@
     .active {
         background-color: $color-yellow !important;
         color: $color-primary !important;
-        border: 1px solid $color-gray-light !important;
+        border:none !important;
+    }
+
+    &:after{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 11%;
+        z-index: -1;
+        height: 100%;
+        display: block;
+        background-color: $color-white;
+        border-radius: .6rem;
     }
 
 }

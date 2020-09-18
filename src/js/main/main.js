@@ -2,6 +2,7 @@
 
 $('.offerCard__label').click(function () {
     $('.offerCard__checkImg').toggleClass('checkImg');
+    $(this).toggleClass('labelClick');
 });
 
 
