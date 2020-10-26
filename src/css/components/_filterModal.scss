@@ -1,0 +1,50 @@
+.filterModal {
+  .modal-dialog {
+    margin: 5.5rem auto;
+  }
+  &__body {
+    background-color: $color-gray-light;
+    padding: 0;
+
+    .close {
+      text-shadow: none;
+      font-size: 3.5rem;
+      font-weight: 400;
+      line-height: 0.6;
+      margin: -2rem;
+      color: $color-white;
+      opacity: 1;
+      &:focus{
+          outline: none;
+      }
+    }
+  }
+
+  &__top {
+    display: flex;
+    padding: 3rem;
+    background-color: $color-white;
+    max-width: 80%;
+    margin-left: auto;
+
+    a {
+      font-size: 1.6rem;
+      background-color: $color-blue;
+      color: $color-white;
+      text-align: center;
+      border-radius: 0.6rem;
+      padding: 1.3rem;
+      transition: all 0.4s;
+
+      &:hover {
+        background-color: $color-yellow;
+        text-decoration: none;
+        color: $color-white;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

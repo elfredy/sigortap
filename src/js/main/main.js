@@ -1,12 +1,10 @@
-
-
+/* 
 $('.offerCard__label').click(function () {
     $('.offerCard__checkImg').toggleClass('checkImg');
     $(this).toggleClass('labelClick');
-});
+}); */
 
-
-f/* unction checkhed(){
+/* unction checkhed(){
     const check = document.getElementsByName('offerCard__checkImg');
 
     check.addEventLister('click',()=>{
@@ -14,3 +12,13 @@ f/* unction checkhed(){
     })
 
 } */
+function showIcon() {
+  var checkLabel = $(".offerCard__label");
+
+  $(checkLabel).click(function () {
+    $(this).siblings(".offerCard__checkImg").toggleClass("checkImg");
+    $(this).toggleClass('labelClick');
+  });
+}
+
+showIcon();
