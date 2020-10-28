@@ -36,13 +36,6 @@
 .datepicker table tr td.active.disabled:hover,
 .datepicker table tr td.active:hover {
     background-color: #062232;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9ea5aa), to(#9ea5aa));
-    background-image: -webkit-linear-gradient(to bottom, #9ea5aa, #9ea5aa);
-    background-image: -o-linear-gradient(to bottom, #9ea5aa, #9ea5aa);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9ea5aa), to(#9ea5aa));
-    background-image: -webkit-linear-gradient(top, #9ea5aa, #9ea5aa);
-    background-image: -moz- oldlinear-gradient(top, #9ea5aa, #9ea5aa);
-    background-image: -o-linear-gradient(top, #9ea5aa, #9ea5aa);
     background-image: linear-gradient(to bottom, #9ea5aa, #9ea5aa);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08c', endColorstr='#0044cc', GradientType=0);
@@ -52,7 +45,6 @@
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-
 .datepicker table tr td span.focused,
 .datepicker table tr td span:hover {
     background-color: #0a0a0a;

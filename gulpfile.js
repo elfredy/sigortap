@@ -17,13 +17,13 @@ var flatten = require('gulp-flatten'); //fondaki klasör altında olan fontları
 var path = {
     build: { //Burada işlemden sonra bitmiş dosyaların nereye koyulacağını gösteriyoruz
         html: 'build/',
-        js: 'build/js/',
-        vendor: 'build/js/vendor/', //src deki vendor klasörünü buildeki vendor klasörüne eklemek için
-        css: 'build/css/main/',
-        images: 'build/img/',
-        fonts: 'build/fonts/',
-        libs: 'build/libs/' //bower ile src klasörüne yüklediğim dosyaları build klasörüne eklemek için
-    },
+        js: '../../../backend/S/sigortap/themes/sigortap/assets/front/js/',
+        vendor: '../../../backend/S/sigortap/themes/sigortap/assets/front/vendor/', //src deki vendor klasörünü buildeki vendor klasörüne eklemek için
+        css: '../../../backend/S/sigortap/themes/sigortap/assets/front/css/main/',
+        images: '../../../backend/S/sigortap/themes/sigortap/assets/front/img/',
+        fonts: '../../../backend/S/sigortap/themes/sigortap/assets/front/fonts/',
+        libs: '../../../backend/S/sigortap/themes/sigortap/assets/front/libs/' //bower ile src klasörüne yüklediğim dosyaları build klasörüne eklemek için
+         },
     src: { //Burası kaynaklar
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main/**/*.js',
