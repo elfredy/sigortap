@@ -1,99 +1,99 @@
 .offerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-gray-light;
+  padding: 3.5rem 1rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  margin-top: 1.5rem;
+
+  & h4 {
+    font-size: 1.8rem;
+    color: $color-blue;
+    font-weight: 500;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: $color-gray-light;
-    padding: 3.5rem 1rem;
-    border-radius: 0.6rem;
-    width: 100%;
-    margin-top: 1.5rem;
+    flex-direction: column;
 
-    & h4 {
-        font-size: 1.8rem;
-        color: $color-blue;
-        font-weight: 500;
-        display: flex;
-        flex-direction: column;
-
-        @include respondmax(lg) {
-            font-size: 1.4rem;
-        }
-
-        & span {
-            color: $color-primary;
-            font-weight: 400;
-            margin-top: 1rem;
-        }
+    @include respondmax(lg) {
+      font-size: 1.4rem;
     }
 
-    &__link {
-        display: block;
-        max-width: 12rem;
+    & span {
+      color: $color-primary;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
+  }
 
-        @include respondmax(lg) {
-            max-width: 8rem;
-        }
+  &__link {
+    display: block;
+    max-width: 12rem;
 
-        & img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    @include respondmax(lg) {
+      max-width: 8rem;
     }
 
-    &__sub {
-        position: relative;
-        top: -1.8rem;
-        transition: all 0.4s;
-        cursor: pointer;
-        span {
-            font-size: 1.8rem;
-            color: $color-blue;
-            font-weight: 500;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-            @include respondmax(lg) {
-                font-size: 1.4rem;
-            }
-        }
-        i {
-            color: $color-blue;
-            margin-left: 0.5rem;
-        }
+  &__sub {
+    position: relative;
+    top: -1.8rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    span {
+      font-size: 1.8rem;
+      color: $color-blue;
+      font-weight: 500;
 
-        .sublist {
-            position: absolute;
-            top: 75%;
-            opacity: 0;
-            visibility: hidden;
-            padding: 0;
-            background-color: $color-white;
-            list-style: none;
-            min-width: 18rem;
-            left: -8.5rem;
-            border-radius: 0.6rem;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s;
-            z-index: 55;
+      @include respondmax(lg) {
+        font-size: 1.4rem;
+      }
+    }
+    i {
+      color: $color-blue;
+      margin-left: 0.5rem;
+    }
 
-            li {
-                padding: 1rem 0 1rem 1rem;
-                border-bottom: 1px solid $color-gray-light;
-                font-size: 1.4rem;
-            }
+    .sublist {
+      position: absolute;
+      top: 75%;
+      opacity: 0;
+      visibility: hidden;
+      padding: 0;
+      background-color: $color-white;
+      list-style: none;
+      min-width: 18rem;
+      left: -8.5rem;
+      border-radius: 0.6rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s;
+      z-index: 55;
 
-            &:after {
-                content: "";
-                position: absolute;
-                bottom: 100%;
-                right: 5%;
-                margin-left: -5px;
-                border-width: 8px;
-                border-style: solid;
-                border-color: transparent transparent #fff;
-            }
-        }
+      li {
+        padding: 1rem 0 1rem 1rem;
+        border-bottom: 1px solid $color-gray-light;
+        font-size: 1.4rem;
+      }
 
-        /*  &:after {
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 5%;
+        margin-left: -5px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent #fff;
+      }
+    }
+
+    /*  &:after {
             content: " \02EF";
             position: absolute;
             color: $color-blue;
@@ -103,21 +103,21 @@
             font-size: 4rem;
         } */
 
-        &:hover {
-            .sublist {
-                top: 115%;
-                opacity: 1;
-                visibility: visible;
-            }
-        }
+    &:hover {
+      .sublist {
+        top: 115%;
+        opacity: 1;
+        visibility: visible;
+      }
     }
+  }
 
-    &__check {
-        display: flex;
-        top: -1.8rem;
-    }
+  &__check {
+    position: relative;
+    top: -1.8rem;
+  }
 
-    &__checkImg {
+  /* &__checkImg {
         width: 1.8rem;
         height: 1.8rem;
         object-fit: cover;
@@ -126,38 +126,130 @@
 
         opacity: 0;
         transition: all 0.3s;
+    } */
+
+  .checkImg {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  &__buyLink {
+    font-size: 14px;
+    padding: 1rem;
+    background-color: $color-blue;
+    color: $color-white;
+    transition: all 0.3s;
+    border-radius: 0.6rem;
+    margin-right: 2.5rem;
+    min-width: 7rem;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      background-color: $color-yellow;
     }
 
-    .checkImg {
-        transform: scale(1);
-        opacity: 1;
+    @include respondmax(lg) {
+      font-size: 12px;
     }
+  }
 
-    &__label {
-        font-size: 14px;
-        padding: 1rem;
-        background-color: $color-blue;
-        color: $color-white;
-        transition: all 0.3s;
-        border-radius: 0.6rem;
-        margin-right: 2.5rem;
-        min-width: 7rem;
-        text-align: center;
-        cursor: pointer;
-        &:hover {
-            background-color: $color-yellow;
-        }
+  &__label {
+    position: absolute;
+    top: 4.4rem;
+    font-size: 1.5rem;
+    right: 1rem;
+  }
 
-        @include respondmax(lg) {
-            font-size: 12px;
-        }
-    }
+  &__checkBox {
+    margin-top: 4.9rem;
+    left: 1.3rem;
+  }
 
-    .labelClick {
+  /*  .labelClick {
         background-color: $color-yellow;
+    } */
+
+  .myFilterPopup {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    width: 35rem;
+    height: 8.5rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -2rem;
+      right:5rem;
+      
+      margin-left: -5px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: #fff transparent transparent;
     }
 
-    &__checkBox {
-        opacity: 0;
+    &__span {
+      font-size: 1.6rem;
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     }
+
+    &__link {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      color: $color-white;
+      padding:.6rem 1rem;
+      border-radius: 0.6rem;
+      background-color: $color-yellow;
+      border: 1px solid $color-yellow;
+      margin-top: -1rem;
+      font-size: 1.5rem;
+      width: 60%;
+      &:hover {
+        background-color: $color-white;
+        color: $color-blue;
+        text-decoration: none;
+        border: 1px solid $color-yellow;
+      }
+    }
+
+    .popClose {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        opacity: 0.6;
+      
+      .popClose:hover {
+        opacity: 1;
+      }
+      .popClose:before, .popClose:after {
+        position: absolute;
+        left: 15px;
+        content: ' ';
+        height: 33px;
+        width: 2px;
+        background-color: #000;
+      }
+      .popClose:before {
+        transform: rotate(45deg);
+      }
+      .popClose:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+  }
 }

@@ -12,7 +12,7 @@ $('.offerCard__label').click(function () {
     })
 
 } */
-function showIcon() {
+/* function showIcon() {
   var checkLabel = $(".offerCard__label");
 
   $(checkLabel).click(function () {
@@ -21,4 +21,4 @@ function showIcon() {
   });
 }
 
-showIcon();
+showIcon(); */
