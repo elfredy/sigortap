@@ -1,5 +1,5 @@
 .filterTop {
-  padding: 5rem 3.5rem;
+  padding: 2rem 3.5rem;
   background-image: url("../../img/back1.png");
   background-size: cover;
   background-position: center;
@@ -14,18 +14,19 @@
     font-size: 2rem;
     height: 5.6rem;
     background-color: $color-blue;
-    color: $color-primary;
-    max-width: 18%;
+    color: $color-white;
+    width: 18%;
     border-radius: 0.6rem;
     margin-left: auto;
-    margin-top: 4rem;
-    border: 1px solid $color-blue;
+    margin-top: 0;
+    border: none;
     transition: all 0.4s;
+    outline: none;
 
     &:hover {
       text-decoration: none;
-      background-color: $color-white;
-      color: $color-primary;
+      background-color: $color-yellow;
+      color: $color-white;
     }
   }
 

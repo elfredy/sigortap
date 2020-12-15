@@ -1,6 +1,6 @@
 .tabFirst {
     border-bottom: none !important;
-
+    margin-bottom: 1rem;
     .nav-item {
         &:not(:first-child) {
             margin-left: 2.5rem;
@@ -9,7 +9,7 @@
 
     .nav-link {
         color: $color-white ;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         background-color: transparent;
         display: flex;
         flex-direction: column;
@@ -41,17 +41,24 @@
         color: $color-primary !important;
         border: 1px solid $color-gray-light !important;
     }
+
+    
+}
+.tab-content{
+    .form-control{
+        margin-top: 0 !important;
+    }
 }
 
-
 .tabSecond{
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     position: relative;
     border-bottom: none !important;
     z-index: 22;
     .nav-link {
         background-color: $color-white !important;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         background-color: transparent;
         display: flex;
         flex-direction: column;

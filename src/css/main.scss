@@ -15,6 +15,13 @@
 @import "components/calendar"; 
 @import "components/filterModal"; 
 @import "components/filterTable"; 
+@import "components/loginModal"; 
+@import "components/informationCard"; 
+@import "components/servicesCard"; 
+@import "components/cooperationCard";
+@import "components/pagesTop";
+@import "components/notifigationCard";
+@import "components/tooltip";
 
 @import "layout/footer";
 @import "layout/header";
@@ -23,8 +30,19 @@
 @import "layout/filterTop";
 @import "layout/filterBottom";
 @import "layout/tabs";
+@import "layout/informationSection";
+@import "layout/logos";
+@import "layout/servicesSection";
+@import "layout/questionSection";
+@import "layout/informationAnswer";
+@import "layout/sidebar";
+@import "layout/wizard";
 
 @import "pages/contact";
+@import "pages/cooperation";
+@import "pages/contracts";
+@import "pages/notifigation";
+@import "pages/profil";
 
 
 

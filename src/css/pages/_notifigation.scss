@@ -1,0 +1,25 @@
+.notifigation {
+    padding: 3rem 0;
+    background-color: $color-gray-light;
+  h1 {
+    font-size: 4rem;
+    color: $color-blue;
+    margin-bottom: 2.4rem;
+  }
+
+  &__link {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    color: $color-primary;
+    display: block;
+    text-align: right;
+    transition: all .3s;
+
+    &:hover{
+        text-decoration: none;
+        color: $color-yellow;
+    }
+
+  }
+
+}

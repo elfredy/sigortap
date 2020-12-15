@@ -1,0 +1,46 @@
+.servicesSection {
+  padding: 4rem 0;
+background-color: $color-gray-light;
+  .sercicesCarousel {
+    .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: flex !important;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 2rem;
+      transform: translateY(-50%);
+
+      button {
+        color: $color-white;
+        font-size: 3.5rem;
+        background-color: $color-yellow;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .4rem;
+        padding-bottom: .4rem !important;
+        opacity: .8;
+
+        &:focus{
+            outline: none !important;
+        }
+      }
+    }
+  }
+
+  .servicesTitleBox {
+    width: 100%;
+    height: 28rem;
+    padding: 4rem 1rem;
+    background-color: $color-yellow;
+
+    h3 {
+      font-size: 4rem;
+      color: $color-white;
+    }
+  }
+}

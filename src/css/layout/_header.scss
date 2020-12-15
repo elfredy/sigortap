@@ -50,8 +50,8 @@
             content: '';
             position: absolute;
             left: 100%;
-            top: 0;
-            height: 100%;
+            top: -1px;
+            height: 101%;
             width: 100%;
             background-color: $color-yellow;
             clip-path: polygon(0 1%, 100% 0%, 75% 100%, 0% 100%);

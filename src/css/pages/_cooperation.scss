@@ -1,0 +1,118 @@
+.cooperation {
+  padding: 4rem;
+  background-color: $color-gray-light;
+
+  h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+    color: $color-blue;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $color-blue;
+  }
+
+  &__footer {
+      padding-top: 2rem;
+    p {
+      font-size: 1.5rem;
+      color: $color-primary;
+    }
+
+    input {
+      height: 4rem;
+      padding: 1rem;
+      outline: none;
+      border: none;
+      background-color: $color-white;
+      border-radius: .4rem;
+      width: 100%;
+      margin: 2rem 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__linkGroup{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  &__copy{
+      font-size: 1.5rem;
+      background-color: $color-yellow;
+      color: $color-primary;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: .4rem;
+      transition: all .3s;
+
+      &:hover{
+          opacity: .7;
+          text-decoration:none;
+          color: $color-primary;
+      }
+  }
+  &__email{
+      font-size: 1.5rem;
+      background-color: $color-blue;
+      color: $color-white;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: .4rem;
+      transition: all .3s;
+
+      &:hover{
+          opacity: .7;
+          text-decoration:none;
+          color: $color-white;
+      }
+  }
+  &__wp{
+      font-size: 1.5rem;
+     color: $color-white;
+     background-color: #40b345;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: .4rem;
+      transition: all .3s;
+
+      &:hover{
+          opacity: .7;
+          text-decoration:none;
+          color: $color-white;
+      }
+  }
+  &__fb{
+      font-size: 1.5rem;
+     color: $color-white;
+     background-color: #19619c;
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: .4rem;
+      transition: all .3s;
+
+      &:hover{
+          opacity: .7;
+          text-decoration:none;
+          color: $color-white;
+      }
+  }
+
+
+  .cooperationTable{
+    background-color: $color-white;
+    tr{
+      font-size: 1.5rem;
+    }
+    th{
+      color: $color-primary;
+    }
+    td,th{
+      padding: 1.75rem;
+    }
+  }
+
+}

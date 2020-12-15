@@ -1,0 +1,149 @@
+.loginModal {
+  
+
+  .modal-content {
+    padding: 5.5rem;
+  }
+
+  .modal-header {
+    display: block;
+  }
+
+  &__close {
+    position: absolute;
+    right: -1.2rem;
+    top: -1.2rem;
+    padding: 0 !important;
+    text-shadow: none;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 0.6;
+    margin: -2rem;
+    color: $color-white;
+    opacity: 1;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    span {
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+
+  form {
+    width: 100%;
+
+    .firstFormGroup {
+      display: flex;
+      justify-content: space-around;
+      input {
+        width: 50%;
+        border: none;
+        border-radius: 0.4rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        background-color: $color-gray-light;
+        padding-left: 1rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:first-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .secondFormGroup {
+      display: block;
+      padding-left: 0;
+      .form-check-label {
+        margin-left: 1rem;
+        margin-right: 3rem;
+        font-size: 1.5rem;
+      }
+      .form-check-input {
+        margin-top: 4px;
+        position: relative;
+        margin-left: 0;
+      }
+
+      a {
+        font-size: 1.5rem;
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__body {
+
+    .form-control{
+      background-color: $color-gray-light;
+    }
+
+    .facebookLogin {
+      width: 80%;
+      margin: 1.5rem 0;
+      background-color: #4267b2;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      height: 4rem;
+      font-size: 1.5rem;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 0.4rem;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .googleLogin {
+      width: 80%;
+      margin: 1.5rem 0;
+      background-color: #db4a39;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      height: 4rem;
+      font-size: 1.5rem;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 0.4rem;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .loginLink,
+    .signUpLink,
+    .beAgentLink {
+      width: 100%;
+      border: none;
+      margin: 1.5rem 0;
+      background-color: $color-blue;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      height: 4rem;
+      font-size: 1.5rem;
+      align-items: center;
+      text-decoration: none;
+      border-radius: 0.4rem;
+      transition: all 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .signUpLink {
+      background-color: $color-yellow;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.myTooltip {
+  background-color: $color-blue;
+  color: $color-white;
+  margin-left: 0;
+  padding: 2px 5px;
+  border-radius: 0.4rem;
+  text-align: center;
+  display: inline;
+  position: relative;
+  font-size: 13px;
+  z-index: 10;
+  cursor: pointer;
+  span {
+    position: absolute;
+    font-size: 1.3rem;
+    border-radius: 0.5rem;
+    background-color: $color-yellow;
+    color: $color-black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    right: -20rem;
+    top: -14rem;
+    max-width: 20rem;
+    max-height: 14rem;
+    overflow: hidden;
+    font-weight: 400;
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    span {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

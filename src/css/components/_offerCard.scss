@@ -1,13 +1,15 @@
-.offerCard {
+
+.offerCardTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $color-gray-light;
   padding: 3.5rem 1rem;
-  border-radius: 0.6rem;
   width: 100%;
   margin-top: 1.5rem;
-
+  position: relative;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
   & h4 {
     font-size: 1.8rem;
     color: $color-blue;
@@ -113,8 +115,9 @@
   }
 
   &__check {
-    position: relative;
-    top: -1.8rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 2.5rem;
   }
 
   /* &__checkImg {
@@ -141,6 +144,7 @@
     transition: all 0.3s;
     border-radius: 0.6rem;
     margin-right: 2.5rem;
+    margin-top: -2rem;
     min-width: 7rem;
     text-align: center;
     cursor: pointer;
@@ -155,16 +159,15 @@
   }
 
   &__label {
-    position: absolute;
-    top: 4.4rem;
+    margin-top: -0.2rem;
     font-size: 1.5rem;
-    right: 1rem;
+    margin-left: 1rem;
   }
 
-  &__checkBox {
+  /*  &__checkBox {
     margin-top: 4.9rem;
     left: 1.3rem;
-  }
+  } */
 
   /*  .labelClick {
         background-color: $color-yellow;
@@ -175,20 +178,21 @@
     background-color: #fff;
     position: absolute;
     right: 0;
-    top: -5rem;
-    width: 35rem;
-    height: 8.5rem;
+    top: -13rem;
+    width: 30rem;
+    height: 11.5rem;
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.24);
 
     &:after {
       content: "";
       position: absolute;
       bottom: -2rem;
-      right:5rem;
-      
+      right: 5rem;
+
       margin-left: -5px;
       border-width: 10px;
       border-style: solid;
@@ -198,18 +202,19 @@
     &__span {
       font-size: 1.6rem;
       position: absolute;
-      top: 27%;
+      top: 30%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      width: 100%;
+      transform: translate(-50%, -50%);
     }
 
     &__link {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+      position: absolute;
+      top: 77%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: $color-white;
-      padding:.6rem 1rem;
+      padding: 0.6rem 1rem;
       border-radius: 0.6rem;
       background-color: $color-yellow;
       border: 1px solid $color-yellow;
@@ -225,20 +230,21 @@
     }
 
     .popClose {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 32px;
-        height: 32px;
-        opacity: 0.6;
-      
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      opacity: 0.6;
+
       .popClose:hover {
         opacity: 1;
       }
-      .popClose:before, .popClose:after {
+      .popClose:before,
+      .popClose:after {
         position: absolute;
         left: 15px;
-        content: ' ';
+        content: " ";
         height: 33px;
         width: 2px;
         background-color: #000;
@@ -250,6 +256,39 @@
         transform: rotate(-45deg);
       }
     }
+  }
+}
 
+.offerCardBottom {
+  display: flex;
+  background-color: $color-gray-dark;
+  padding: 3rem 1rem;
+  align-items: center;
+  color: $color-white;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+
+  .row {
+    width: 100%;
+  }
+
+  &__right {
+    column-count: 4;
+
+    div {
+      font-size: 1.5rem;
+      padding-right: 1.3rem;
+      display: flex;
+      justify-content: flex-end;
+      @include respondmax(xxl){
+        font-size: 1.2rem;
+      }
+      img {
+        width: 2rem;
+        height: 1.4rem;
+        object-fit: contain;
+        
+      }
+    }
   }
 }

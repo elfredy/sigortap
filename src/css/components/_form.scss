@@ -1,13 +1,25 @@
 .form-control {
-    font-size: 1.7rem;
-    height: 5.2rem;
-    border: none;
-    border-radius: 0.6rem;
-    padding: 1rem ;
-    margin-top: 3rem;
-    color: $color-primary !important;
-    &:focus {
-        outline: none;
-        box-shadow: none;
-    }
+  font-size: 1.7rem;
+  height: 5.2rem;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  color: $color-primary !important;
+  appearance: none;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  .selectArrow {
+    position: absolute;
+    right: 24px;
+    top: 47px;
+    font-size: 15px;
+  }
 }

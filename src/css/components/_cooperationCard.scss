@@ -1,0 +1,57 @@
+ .cooperationCard{
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: .4rem;
+
+    &__first,&__last,&__second{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $color-white;
+        padding: 2rem;
+        h5{
+            font-size: 2rem;
+            color: $color-blue;
+        }
+        h6{
+            font-size: 2.4rem;
+            color: $color-primary;
+        }
+    }
+
+    &__second{
+        background-color: $color-blue;
+
+        p{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            color: $color-white;
+        }
+    }
+    
+
+    &__last{
+        background-color: $color-blue;
+
+        a {
+            background-color: $color-white;
+            text-decoration: none;
+            color: $color-primary;
+            border-radius: .4rem;
+            padding: 1.3rem;
+            font-size: 1.5rem;
+            transition: .3s;
+            &:hover{
+                text-decoration: none;
+                opacity: .7;
+            }
+        }
+    }
+
+ }

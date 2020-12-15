@@ -1,0 +1,75 @@
+.contracts {
+  padding: 3rem;
+  background-color: $color-gray-light;
+  h1 {
+    font-size: 4rem;
+    color: $color-blue;
+  }
+
+  &__tabNav {
+    border-bottom: none !important;
+    width: 100%;
+    flex-wrap: nowrap;
+    margin-top: 2.5rem;
+
+    .nav-link {
+      font-size: 1.7rem;
+      padding: 2rem;
+      color: $color-primary;
+      border: none !important;
+      text-align: center;
+      width: 100%;
+      background-color: $color-white;
+
+      &:hover {
+        border: none !important;
+        background-color: $color-yellow;
+      }
+    }
+
+    .active {
+      color: $color-primary !important;
+      border: none !important;
+      background-color: $color-yellow !important;
+    }
+  }
+
+  .form-control {
+    width: 93% !important;
+  }
+
+  &__search {
+    padding: 0 1.3rem;
+  }
+
+  &__table {
+    margin-top: 3rem;
+
+    font-size: 1.5rem;
+
+    thead {
+      tr {
+        th {
+          color: $color-blue;
+          border: none;
+          text-align: center;
+          padding: 1.5rem 0;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    tbody{
+        tr{
+            td{
+                text-align: center;
+                padding: 1.3rem 0;
+            }
+        }
+
+        tr:nth-of-type(even){
+            background-color: $color-white;
+        }
+    }
+  }
+}

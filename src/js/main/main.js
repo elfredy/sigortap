@@ -1,24 +1,25 @@
-/* 
-$('.offerCard__label').click(function () {
-    $('.offerCard__checkImg').toggleClass('checkImg');
-    $(this).toggleClass('labelClick');
-}); */
-
-/* unction checkhed(){
-    const check = document.getElementsByName('offerCard__checkImg');
-
-    check.addEventLister('click',()=>{
-        check.classlist('checkImg')
-    })
-
-} */
-/* function showIcon() {
-  var checkLabel = $(".offerCard__label");
-
-  $(checkLabel).click(function () {
-    $(this).siblings(".offerCard__checkImg").toggleClass("checkImg");
-    $(this).toggleClass('labelClick');
+$(document).ready(function () {
+  $(".loginCompany").click(function () {
+    $(".sidebar").fadeIn("fast");
+    $(".sidebarRight").addClass("sidebarRightShow");
   });
-}
+  $(".sidebarClose").click(function () {
+    $(".sidebar").fadeOut("fast");
+    $(".sidebarRight").removeClass("sidebarRightShow");
+  });
 
-showIcon(); */
+  /*  $(".sidebar").click(function (event) {
+    if ($(event.target).is(".sidebarRight")) {
+      console.log("içeri");
+    } else {
+      $(".sidebar").fadeOut("fast");
+    }
+  }); */
+
+  $(".closeRegister").click(function () {
+    $("#reqisterModal").modal("hide");
+  });
+  $(".closeLogin").click(function () {
+    $("#loginModal").modal("hide");
+  });
+});
